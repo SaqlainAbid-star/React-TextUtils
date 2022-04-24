@@ -3,7 +3,7 @@ import { useState } from 'react'
 // import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm'
-// import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 // import naam from './moon'
 import { a, b, c } from './moon'
@@ -55,7 +55,7 @@ function App() {
         <Navbar title="TextUtils" mode={mode} aboutText="About TextUtils" toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-3">
-          {/* <Routes> */}
+          {/* <Switch> */}
 
             {/* <Route exact path="/"> */}
             <TextForm heading="Enter the text below to analyze:" showAlert={showAlert} mode={mode} />
@@ -65,7 +65,7 @@ function App() {
               <About />
             </Route>
             
-          </Routes> */}
+          </Switch> */}
         </div>
       {/* </Router> */}
     </>
