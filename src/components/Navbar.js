@@ -7,16 +7,26 @@ export default function Navbar({ title, aboutText, mode, toggleMode }) {
   return (
     <nav className={`navbar navbar-expand-lg navbar-${mode} bg-${mode}`}>
       <div className="container-fluid">
+<<<<<<< HEAD
         {/* <a className="navbar-brand" href="#">{title}</a> */}
         <Link className="navbar-brand" to="/">{title}</Link>
+=======
+        <a className="navbar-brand" href="#">{title}</a>
+        {/* <Link className="navbar-brand" to="/">{title}</Link> */}
+>>>>>>> 1b20f35efff6b0d4eae125171c4bb09189b328d3
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
+<<<<<<< HEAD
               {/* <a className="nav-link active" aria-current="page" href="#">Home</a> */}
               <Link className="nav-link" aria-current="page" to="/">Home</Link>
+=======
+              <a className="nav-link active" aria-current="page" href="#">Home</a>
+              {/* <Link className="nav-link active" aria-current="page" to="/">Home</Link> */}
+>>>>>>> 1b20f35efff6b0d4eae125171c4bb09189b328d3
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/about">{aboutText}</Link>

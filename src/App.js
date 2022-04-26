@@ -3,7 +3,11 @@ import { useState } from 'react'
 import About from './components/About';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm'
+<<<<<<< HEAD
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+=======
+// import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+>>>>>>> 1b20f35efff6b0d4eae125171c4bb09189b328d3
 
 // import naam from './moon'
 // import { a, b, c } from './moon'
@@ -69,12 +73,26 @@ function App() {
         <Navbar title="TextUtils" mode={mode} aboutText="About TextUtils" toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-3">
+<<<<<<< HEAD
           <Routes>
 
             <Route exact path="/about"  element={<About mode={mode} />}  />
             <Route exact path="/" element={ <TextForm heading="Try TextUtils - word counter, character counter, remove extra spaces" showAlert={showAlert} mode={mode} />}/>
        
           </Routes>
+=======
+          {/* <Switch> */}
+
+            {/* <Route exact path="/"> */}
+            <TextForm heading="Enter the text below to analyze:" showAlert={showAlert} mode={mode} />
+            {/* </Route> */}
+
+            {/* <Route exact path="/about">
+              <About />
+            </Route>
+            
+          </Switch> */}
+>>>>>>> 1b20f35efff6b0d4eae125171c4bb09189b328d3
         </div>
       </Router>
     </>
